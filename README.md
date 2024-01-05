@@ -1,3 +1,17 @@
+ <style>
+        .image-pair {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .image-pair img {
+            margin: 5px;
+            width: 200px;
+            height: 400px;
+        }
+    </style>
+
 <h1 align="center" id="title">AgriGroww - A farmer advisory app</h1>
 
 <p align="center"><img src="https://socialify.git.ci/Debojit-mitra/AgriGroww/image?description=1&amp;descriptionEditable=Agrigroww%20-%20A%20farmer%20advisory%20app&amp;font=Bitter&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Signal&amp;theme=Auto" alt="project-image"></p>
