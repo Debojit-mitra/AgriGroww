@@ -7,31 +7,31 @@
 <h2>Project Screenshots:</h2>
 <h3>AgriGroww:</h3>
 
-<img src="https://github.com/Debojit-mitra/AgriGroww/blob/f45b34f9b4c3b69a1637dea67fdfabd9f5735a6d/Images/main/Screenshot_20240105_123810.png?raw=true" alt="project-screenshot" width="400" height="400/">
+<img src="https://github.com/Debojit-mitra/AgriGroww/blob/f45b34f9b4c3b69a1637dea67fdfabd9f5735a6d/Images/main/Screenshot_20240105_123810.png?raw=true" alt="project-screenshot" width="400" height="600/">
 
-<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/main/Screenshot_20240105_123908.png?raw=true" alt="project-screenshot" width="400" height="400/">
+<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/main/Screenshot_20240105_123908.png?raw=true" alt="project-screenshot" width="400" height="600/">
 
-<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/main/Screenshot_20240105_123938.png?raw=true" alt="project-screenshot" width="400" height="400/">
+<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/main/Screenshot_20240105_123938.png?raw=true" alt="project-screenshot" width="400" height="600/">
 
-<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/main/Screenshot_20240105_202217.png?raw=true" alt="project-screenshot" width="400" height="400/">
+<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/main/Screenshot_20240105_202217.png?raw=true" alt="project-screenshot" width="400" height="600/">
 
-<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/main/Screenshot_20240105_130949.png?raw=true" alt="project-screenshot" width="400" height="400/">
+<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/main/Screenshot_20240105_130949.png?raw=true" alt="project-screenshot" width="400" height="600/">
 
 <h3>AgriGroww Admin:</h3>
 
-<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/Admin/Screenshot_20240105_125638.png?raw=true" alt="project-screenshot" width="400" height="400/">
+<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/Admin/Screenshot_20240105_125638.png?raw=true" alt="project-screenshot" width="400" height="600/">
 
-<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/Admin/Screenshot_20240105_130118.png?raw=true" alt="project-screenshot" width="400" height="400/">
+<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/Admin/Screenshot_20240105_130118.png?raw=true" alt="project-screenshot" width="400" height="600/">
 
-<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/Admin/Screenshot_20240105_130148.png?raw=true" alt="project-screenshot" width="400" height="400/">
+<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/Admin/Screenshot_20240105_130148.png?raw=true" alt="project-screenshot" width="400" height="600/">
 
-<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/Admin/Screenshot_20240105_130224.png?raw=true" alt="project-screenshot" width="400" height="400/">
+<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/Admin/Screenshot_20240105_130224.png?raw=true" alt="project-screenshot" width="400" height="600/">
 
-<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/Admin/Screenshot_20240105_130310.png?raw=true" alt="project-screenshot" width="400" height="400/">
+<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/Admin/Screenshot_20240105_130310.png?raw=true" alt="project-screenshot" width="400" height="600/">
 
 <h3>AgriGroww Expert:</h3>
 
-<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/Expert/Screenshot_20240105_131107.png?raw=true" alt="project-screenshot" width="400" height="400/">
+<img src="https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/Expert/Screenshot_20240105_131107.png?raw=true" alt="project-screenshot" width="400" height="600/">
 
   
   
