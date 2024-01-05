@@ -26,3 +26,21 @@ I did this project as my final year BCA project.
 | Screenshot 1 |
 | --- |
 | ![Screenshot 1](https://github.com/Debojit-mitra/AgriGroww/blob/master/Images/Expert/Screenshot_20240105_131107.png?raw=true) |
+
+## 🧐 Features
+
+Here're some of the project's best features:
+
+* Find name of any plant flower tree
+* Talk with an expert
+* Multiple Languages
+* User Profile
+
+## 💻 Built with
+
+Technologies used in the project:
+
+* Java
+* Android Studio
+* Adobe XD
+* Firebase
