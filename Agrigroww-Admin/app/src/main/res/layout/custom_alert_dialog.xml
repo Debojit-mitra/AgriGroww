@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/extra_background"
+    >
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/custom_animationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_fileName="account_created.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Spinner
+        android:id="@+id/selectFromSpinner"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/custom_animationView"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_spinner"
+        android:spinnerMode="dropdown"
+        android:popupBackground="@drawable/background_spinner"
+        android:layout_margin="@dimen/_10sdp"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/selectFromSpinner_dropdown"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_alignEnd="@+id/selectFromSpinner"
+        android:src="@drawable/ic_drop_down"
+        android:layout_alignTop="@+id/selectFromSpinner"
+        android:visibility="gone"
+        app:tint="@color/mode"
+        />
+
+    <TextView
+        android:id="@+id/custom_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectFromSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:fontFamily="@font/acme"
+        android:textAlignment="center"
+        android:textColor="@color/mode"
+        android:textSize="@dimen/_15sdp"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/custom_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom_textview"
+        android:text=""
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_centerHorizontal="true"
+        android:buttonTint="@color/main_color"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/button_textview"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:gravity="center"
+        android:layout_below="@+id/custom_checkbox"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:fontFamily="@font/acme"
+        android:textAlignment="center"
+        android:textColor="@color/mode"
+        android:textSize="@dimen/_10sdp"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/custom_textview_for_editext"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_textview"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:hint="@string/enter_ban_reason"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/mode"
+        app:helperText="@string/required_values"
+        app:helperTextTextColor="@color/red"
+        android:visibility="gone"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/custom_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="4"
+            android:maxLength="100" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/search_filter_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom_textview_for_editext"
+        android:visibility="gone"
+        >
+
+        <RadioButton
+            android:id="@+id/searchByName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Search By Name"/>
+
+        <RadioButton
+            android:id="@+id/searchByUid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Search By UID"/>
+
+        <RadioButton
+            android:id="@+id/searchByEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Search By Email"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_filter_radio_group"
+        android:gravity="center"
+        >
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/mode"
+        style="?android:attr/borderlessButtonStyle"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/mode"
+        style="?android:attr/borderlessButtonStyle"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:theme="@style/CircularProgress"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>

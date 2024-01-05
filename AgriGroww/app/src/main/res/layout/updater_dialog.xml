@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/extra_background"
+    >
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/custom_animationView"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_110sdp"
+            app:lottie_fileName="update_app.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_20sdp"
+            >
+
+            <TextView
+                android:id="@+id/textview_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Update available!"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/mode"
+                android:textSize="@dimen/_15sdp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textview_update_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_update"
+                android:text="Date: 10-03-2023"
+                android:fontFamily="@font/acme"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textAlignment="center"
+                android:textColor="@color/mode"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textview_update_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_update_date"
+                android:text="Version 1.2.0"
+                android:fontFamily="@font/acme"
+                android:textAlignment="center"
+                android:textColor="@color/mode"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview_release_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:fontFamily="@font/acme"
+        android:text="Release Notes:"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textColor="@color/mode"
+        android:textSize="@dimen/_15sdp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/description_release_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_release_notes"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:alpha="0.8"
+        android:fontFamily="@font/acme"
+        android:text="Release Notes:"
+        android:textColor="@color/mode"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/description_github_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description_release_notes"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/acme"
+        android:text="Repo url:"
+        android:textColor="@color/mode"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/mode"
+        style="?android:attr/borderlessButtonStyle"
+        android:visibility="visible"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/description_github_url"
+        />
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_cancel"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/mode"
+        style="?android:attr/borderlessButtonStyle"
+        android:visibility="gone"
+        android:layout_toStartOf="@+id/ok_button"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/description_github_url"
+        />
+
+</RelativeLayout>

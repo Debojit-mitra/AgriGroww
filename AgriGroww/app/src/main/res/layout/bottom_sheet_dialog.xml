@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottom_sheet_scroll"
+    android:background="@drawable/bottomsheet_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/plant_image_card"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_140sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:elevation="10dp"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <ozaydin.serkan.com.image_zoom_view.ImageViewZoom
+                android:id="@+id/identify_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/mode_inverse"
+                android:scaleType="centerCrop"/>
+
+       <!-- <ImageView
+            android:id="@+id/identify_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/extra_background"
+            android:scaleType="centerCrop" />-->
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/textview_plant_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_below="@+id/plant_image_card"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="@string/score"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/acme"
+            />
+
+        <TextView
+            android:id="@+id/plant_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_toEndOf="@+id/textview_plant_score"
+            android:layout_below="@+id/plant_image_card"
+            android:fontFamily="@font/acme"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/textview_scientific_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_below="@+id/textview_plant_score"
+            android:text="@string/scientific_nname"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/acme"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/scientific_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_below="@+id/textview_plant_score"
+            android:layout_toEndOf="@+id/textview_scientific_name"
+            android:fontFamily="@font/acme"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/textview_common_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_below="@+id/textview_scientific_name"
+            android:text="@string/common_nname"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/acme"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/common_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_below="@+id/textview_scientific_name"
+            android:layout_toEndOf="@+id/textview_common_name"
+            android:fontFamily="@font/acme"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/textview_family_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_below="@+id/textview_common_name"
+            android:text="@string/family_nname"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/acme"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/family_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_below="@+id/textview_common_name"
+            android:layout_toEndOf="@+id/textview_family_name"
+            android:fontFamily="@font/acme"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/textview_detected_organ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_below="@+id/textview_family_name"
+            android:text="@string/biological_source"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/acme"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detected_organ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_below="@+id/textview_family_name"
+            android:layout_toEndOf="@+id/textview_detected_organ"
+            android:fontFamily="@font/acme"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/textview_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_below="@+id/textview_detected_organ"
+            android:text="@string/description"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/acme"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/plant_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_below="@+id/textview_description"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:fontFamily="@font/acme"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/textview_common_diseases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_below="@+id/plant_description"
+            android:text="@string/common_diseases"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/acme"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/common_diseases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_below="@+id/textview_common_diseases"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:fontFamily="@font/acme"
+            android:textSize="@dimen/_12sdp" />
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

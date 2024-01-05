@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">AgriGroww</string>
+    <string name="made_with_in_india">Made with 💖 in India</string>
+    <string name="login_to_get_started">Login to Get Started</string>
+    <string name="india_phone_code">+91</string>
+    <string name="verify">Verify</string>
+    <string name="didn_t_receive_otp">Didn`t receive otp?</string>
+    <string name="resend_otp">RESEND OTP</string>
+    <string name="continue_btn">Continue</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Name:</string>
+    <string name="userid">User Id:</string>
+    <string name="date_join">Date Joined:</string>
+    <string name="ok">OK</string>
+    <string name="your_system_info_and_log_data_will_be_sent_to_agrigroww">(Your system info and log data will be sent to Agrigroww)</string>
+    <string name="submit">Submit</string>
+    <string name="send_a_copy_of_feedback_to_my_email">Send a copy of feedback to my email</string>
+    <string name="unique_id">Unique Id:</string>
+    <string name="add_screenshot_optional">Add screenshot (optional)</string>
+    <string name="description_optional">Description (optional)</string>
+    <string name="feedback_form">Feedback Form</string>
+    <string name="identify_you_crop">Identify your Plant</string>
+    <string name="click_identify">Click Identify &amp; See Magic</string>
+    <string name="take_picture">Take Picture or Upload</string>
+    <string name="identify">Identify</string>
+    <string name="phone_no">Phone No:</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="give_feedback">Give Feedback</string>
+    <string name="change_language">Change Language</string>
+    <string name="logout">Logout</string>
+    <string name="description_server">Description Server</string>
+    <string name="optional_profile_photo">(optional profile photo)</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="select_date_of_birth">Select Date of Birth</string>
+    <string name="enter_email_optional">Enter Email (optional)</string>
+    <string name="gender">Gender</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="delete_profile">Delete Profile</string>
+    <string name="required_values">Required*</string>
+    <string name="new_user_your_can_register_from_here_to">New User? Your can register from here to</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="register_to_get_started">Register to get started</string>
+    <string name="settings">Settings</string>
+    <string name="scroll_animation">Scroll Animation</string>
+    <string name="cancel">Cancel</string>
+    <string name="score">Score:</string>
+
+    <string name="scientific_nname">Scientific\nName:</string>
+    <string name="common_nname">Common\nName:</string>
+    <string name="biological_source">Biological Source:</string>
+    <string name="family_nname">Family\nName:</string>
+    <string name="description">Description:</string>
+    <string name="common_diseases">Common Diseases:</string>
+
+    <string name="logging_out">Are you sure you want to Logout!\n We will miss you!</string>
+    <string name="profile_deleting">Are you sure you want to delete your profile! Your data will also be deleted.</string>
+    <string name="please_rate_this_app_it_is_compulsory_while_giving_feedback">(Please rate this app, it is compulsory while giving feedback)</string>
+    <string name="scroll_animation_settings_desc">It is an scroll animation applied to the whole app, to see difference restart the app then identify the picture again.</string>
+    <string name="description_server_settings_desc">Description server is the api to fetch description and common diseases about the plants, there are two servers. You can change server to fetch faster or when server is not working.</string>
+    <string name="poor_feedback">POOR</string>
+    <string name="bad_feedback">BAD</string>
+    <string name="okay_feedback">OKAY</string>
+    <string name="good_feedback">GOOD</string>
+    <string name="great_feedback">GREAT</string>
+    <string name="remove_email">Remove Email</string>
+    <string name="confirm">Confirm</string>
+    <string name="no_email_provided">No email provided!</string>
+    <string name="add_email">Add Email</string>
+    <string name="type_message_here">Type message here</string>
+    <string name="language_not_available">Due to server issue, Assamese and Hindi is not available completely.\n Sorry for inconvenience!</string>
+    <string name="new_request">New Request</string>
+    <string name="an_expert_has_been_added_to_this_chat">(An Expert has been added to this chat)</string>
+    <string name="mark_as_solved">Mark as solved</string>
+    <string name="this_request_has_been_marked_solved">This request has been marked solved!</string>
+
+
+</resources>

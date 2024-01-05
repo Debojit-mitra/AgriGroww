@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#24BD2C</color>
+    <color name="teal_700">#24BD2C</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--mycolors_light-->
+    <color name="main_color">#24BD2C</color>
+    <color name="splash_logo">#3A6D0C</color>
+    <color name="progress_bar">#3DBE44</color>
+    <color name="mode">#000000</color>
+    <color name="mode_inverse">#FFFFFF</color>
+    <color name="red">#FF1A1A</color>
+    <color name="nav_bar">#24BD2C</color>
+    <color name="extra_background">#E2FFE4</color>
+    <color name="orange_color">#FF8534</color>
+    <color name="shimmer_color">#D1D1D1</color>
+
+    <!--otpview-->
+    <color name="color_background_box">@color/mode_inverse</color>
+    <color name="color_background_box_stroke">@color/mode</color>
+    <color name="color_background_box_stroke_active">@color/main_color</color>
+    <!--otpview-->
+
+
+    <!--imagepicker-->
+    <color name="ucrop_color_toolbar">@color/mode_inverse</color>
+    <color name="ucrop_color_statusbar">@color/mode_inverse</color>
+    <color name="ucrop_color_widget_active">@color/main_color</color>
+    <color name="ucrop_color_toolbar_widget">@color/mode</color>
+    <color name="dialog_choose_icon_color">@color/mode</color>
+    <color name="dialog_choose_text_color">@color/mode</color>
+    <!--imagepicker-->
+</resources>

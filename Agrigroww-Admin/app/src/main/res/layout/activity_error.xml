@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mode_inverse"
+    tools:context=".ErrorActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/error_animationView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:lottie_fileName="nointernet.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/textView_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/error_animationView"
+
+       android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/acme"
+        android:text=""
+        android:textColor="@color/mode"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/refresh_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:layout_below="@+id/textView_error"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="@dimen/_12sdp"
+        />
+
+
+
+</RelativeLayout>

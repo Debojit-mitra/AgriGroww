@@ -1,0 +1,73 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AgrigrowwAdmin" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.AgriGroww.ChatActivity" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#22AC29</item>
+        <item name="android:statusBarColor">@color/extra_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.AgriGroww.Splash_Screen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/mode_inverse</item>
+        <item name="colorPrimary">#22AC29</item>
+    </style>
+
+    <style name="RoundedCornersDialog" parent="@style/Theme.MaterialComponents.Dialog">
+        <item name="dialogCornerRadius">10dp</item>
+        <!--<item name="android:textColor">@color/black</item>-->
+    </style>
+    <style name="CircularProgress" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorAccent">@color/progress_bar</item>
+    </style>
+
+    <style name="Theme.AgriGroww.MainActivity" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#22AC29</item>
+        <item name="android:statusBarColor">@color/nav_bar</item>
+        <item name="android:navigationBarColor">@color/nav_bar</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorControlActivated">@color/splash_logo</item>
+    </style>
+
+    <style name="Theme.AgrigrowwAdmin.button_red" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#BF0000</item>
+    </style>
+
+    <!--bottom sheet dialog-->
+    <style name="BottomSheetTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/_15sdp</item>
+        <item name="cornerSizeTopLeft">@dimen/_15sdp</item>
+    </style>
+    <style name="BottomSheetStyle" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/_15sdp</item>
+        <item name="cornerSizeTopLeft">@dimen/_15sdp</item>
+    </style>
+    <!--bottom sheet dialog-->
+
+    <!--popUp Menu-->
+    <style name="CustomPopupTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="popupMenuStyle">@style/PopupMenu</item>
+    </style>
+    <style name="PopupMenu" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:popupBackground">@drawable/popup_menu_background</item>
+       <!-- <item name="popupMenuBackground">@drawable/popup_menu_background</item>-->
+    </style>
+    <!--popUp Menu-->
+
+</resources>

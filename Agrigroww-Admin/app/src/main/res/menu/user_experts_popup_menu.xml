@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/three_dot_email"
+        android:icon="@drawable/ic_email"
+        android:title="@string/email_user" />
+    <item
+        android:id="@+id/three_dot_ban"
+        android:icon="@drawable/ic_ban_block"
+        android:title="@string/ban_users" />
+    <item
+        android:id="@+id/three_dot_Unban"
+        android:icon="@drawable/ic_unban"
+        android:title="@string/unban_user" />
+</menu>

@@ -1,0 +1,72 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AgriGroww" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#22AC29</item>
+        <item name="colorPrimaryVariant">#22AC29</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#22AC29</item>
+        <item name="colorSecondaryVariant">#22AC29</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+   <!-- <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splashlogo</item>
+        <item name="postSplashScreenTheme">@style/Theme.AgriGroww.Splash_Screen</item>
+        <item name="windowSplashScreenBackground">@color/mode_inverse</item>
+        <item name="splashScreenIconSize">@dimen/_500sdp</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="tiramisu">@drawable/splashlogo</item>
+        <item name="android:windowSplashScreenBehavior"  tools:targetApi="tiramisu">icon_preferred</item>
+    </style>-->
+
+    <style name="Theme.AgriGroww.ChatActivity" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#22AC29</item>
+        <item name="android:statusBarColor">@color/extra_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.AgriGroww.Splash_Screen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#22AC29</item>
+        <item name="android:statusBarColor">@color/mode_inverse</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="RoundedCornersDialog" parent="@style/Theme.MaterialComponents.Dialog">
+        <item name="dialogCornerRadius">10dp</item>
+        <!--<item name="android:textColor">@color/black</item>-->
+    </style>
+
+    <style name="CircularProgress" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorAccent">@color/progress_bar</item>
+    </style>
+
+    <style name="Theme.AgriGroww.MainActivity" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#22AC29</item>
+        <item name="android:statusBarColor">@color/mode_inverse</item>
+        <item name="android:navigationBarColor">@color/nav_bar</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorControlActivated">@color/splash_logo</item>
+    </style>
+
+    <style name="Theme.AgriGroww.button_red" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#BF0000</item>
+    </style>
+
+    <!--bottom sheet dialog-->
+    <style name="BottomSheetTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/_15sdp</item>
+        <item name="cornerSizeTopLeft">@dimen/_15sdp</item>
+    </style>
+    <style name="BottomSheetStyle" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/_15sdp</item>
+        <item name="cornerSizeTopLeft">@dimen/_15sdp</item>
+    </style>
+    <!--bottom sheet dialog-->
+
+</resources>

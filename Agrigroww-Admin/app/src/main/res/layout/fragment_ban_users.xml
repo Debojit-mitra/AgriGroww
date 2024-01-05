@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/mode_inverse"
+    tools:context=".fragments.usersTypes.BanUsersFragment">
+
+    <!--<androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_minus12sdp"
+        app:cardBackgroundColor="@color/nav_bar"
+        app:cardCornerRadius="@dimen/_13sdp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/total_users_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text=""
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/acme"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_minus12sdp"
+        app:cardBackgroundColor="@color/nav_bar"
+        app:cardCornerRadius="@dimen/_13sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/total_users_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/acme"
+                android:text=""
+                android:layout_marginStart="@dimen/_15sdp"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:textSize="@dimen/_15sdp" />
+
+            <ImageButton
+                android:id="@+id/search_button"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:backgroundTint="@color/nav_bar"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_minus30sdp"
+                android:src="@drawable/ic_search"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                app:tint="@color/white"
+                />
+
+            <com.mancj.materialsearchbar.MaterialSearchBar
+                style="@style/MaterialSearchBarLight"
+                app:mt_maxSuggestionsCount="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchBar"
+                android:layout_below="@+id/total_users_count"
+                android:layout_toEndOf="@+id/filter_button"
+                android:visibility="gone"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:mt_searchBarColor="@color/nav_bar"
+                app:mt_backIconTint="@color/white"
+                app:mt_clearIconTint="@color/white"
+                app:mt_hintColor="@color/white"
+                app:mt_textColor="@color/white"
+                android:layout_marginStart="@dimen/_minus5sdp"
+                />
+
+            <ImageButton
+                android:id="@+id/filter_button"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:backgroundTint="@color/nav_bar"
+                android:src="@drawable/ic_filter_list"
+                android:layout_below="@+id/total_users_count"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:tint="@color/white"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/pullToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/card1"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_minus10sdp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/_13sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

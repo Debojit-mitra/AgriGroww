@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mode_inverse"
+    tools:context=".RegistrationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mode_inverse">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/registration_animationView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:lottie_fileName="registration.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_as_an_expert"
+        android:layout_below="@+id/registration_animationView"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:fontFamily="@font/acme"
+        android:textStyle="bold"
+        android:textColor="@color/mode"
+        />
+
+       <!-- <ImageView
+            android:id="@+id/register_profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/textView_register"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profile_image"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            />-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/register_profile_image"
+            android:layout_width="106dp"
+            android:layout_height="106dp"
+            android:src="@drawable/profile_image"
+            android:layout_below="@+id/textView_register"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/mode"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/optional_profile_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/optional_profile_photo"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/register_profile_image"
+            />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textview_name_signup"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="@string/enter_name"
+        app:endIconTint="@color/mode"
+        app:endIconMode="clear_text"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/optional_profile_photo"
+        app:helperText="@string/required_values"
+        app:helperTextTextColor="@color/red"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edittext_name_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textview_dateofbirth_signup"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="@string/select_date_of_birth"
+        app:endIconMode="custom"
+        app:endIconTint="@color/mode"
+        app:endIconDrawable="@drawable/round_calendar_month"
+        android:layout_below="@+id/textview_name_signup"
+        app:helperText="@string/required_values"
+        app:helperTextTextColor="@color/red"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edittext_dateofbirth_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:editable="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textview_authentication_number_signup"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_dateofbirth_signup"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/enter_authentication_number"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/mode"
+            app:helperText="@string/required_values"
+            app:helperTextTextColor="@color/red">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edittext_authentication_number_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapCharacters"
+                android:maxLength="8"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+            android:id="@+id/textView_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:layout_below="@+id/textview_authentication_number_signup"
+            android:layout_marginStart="30dp"
+            android:textSize="15sp"
+            android:textColor="@color/mode"
+            />
+        <RadioGroup
+            android:id="@+id/radio_group_register_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/textView_gender"
+            >
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/mode"/>
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/mode"/>
+
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/frame_layout_registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio_group_register_gender">
+
+            <Button
+                android:id="@+id/button_continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="100dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/continue_btn"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:theme="@style/CircularProgress"
+                />
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/change_language_btn"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:background="@color/mode_inverse"
+            app:tint="@color/mode"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_change_language" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mode_inverse"
+    tools:context=".SentEmailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/custom_animationView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_minus40sdp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="email_verify.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:id="@+id/usersName_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/custom_animationView"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_minus20sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:fontFamily="@font/acme" />
+
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usersName_email"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:fontFamily="@font/acme"
+            android:text="User`s Email: Debojit16mitra@gmail.com" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_subjectTextview"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_email"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:hint="@string/enter_subject"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/mode"
+            app:helperText="@string/required_values"
+            app:helperTextTextColor="@color/red">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_subjectEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:maxLength="100"
+                android:maxLines="2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_titleTextview"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_subjectTextview"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:hint="@string/enter_title"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/mode"
+            app:helperText="@string/required_values"
+            app:helperTextTextColor="@color/red">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_titleEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textShortMessage|textMultiLine"
+                android:maxLength="100"
+                android:maxLines="2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_bodyTextview"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_titleTextview"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:hint="@string/enter_body"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/mode"
+            app:helperText="@string/required_values"
+            app:helperTextTextColor="@color/red">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_bodyEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textLongMessage|textMultiLine"
+                android:maxLength="500"
+                android:maxLines="20" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/add_new_line_hint1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_bodyTextview"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:text="@string/extra"
+            android:textStyle="bold"
+            android:textColor="@color/mode"
+            android:textSize="@dimen/_12sdp"
+            />
+
+        <TextView
+            android:id="@+id/add_new_line_hint2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_new_line_hint1"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:text="@string/extra_text"
+            android:textSize="@dimen/_10sdp"
+            />
+
+        <Button
+            android:id="@+id/emailPreview_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👆Email Preview👆"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/mode"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/add_new_line_hint2"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/send"
+            android:layout_below="@+id/emailPreview_button"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

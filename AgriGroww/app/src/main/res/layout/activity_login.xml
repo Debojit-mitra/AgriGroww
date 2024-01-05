@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mode_inverse"
+    tools:context=".LoginActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/login_animationView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_fileName="login_and_sign_up.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_to_get_started"
+        android:layout_below="@+id/login_animationView"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:fontFamily="@font/acme"
+        android:textStyle="bold"
+        android:textColor="@color/mode"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_newUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_user_your_can_register_from_here_to"
+        android:layout_below="@+id/textView_login"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:fontFamily="@font/acme"
+        android:layout_marginTop="5dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textview_number_login"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="@string/enter_phone_number"
+        android:textColorHint="@color/mode"
+        app:endIconTint="@color/mode"
+        app:startIconTint="@color/mode"
+        app:endIconMode="clear_text"
+        android:layout_marginTop="10dp"
+        app:prefixText="@string/india_phone_code"
+        app:prefixTextColor="@color/mode"
+        android:layout_below="@+id/textView_newUser"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edittext_number_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLength="10"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_number_login">
+
+        <Button
+            android:id="@+id/button_send_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/verify"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:theme="@style/CircularProgress"
+            />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/textview_change_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_language"
+        android:layout_below="@+id/frame_layout_login"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/acme"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/main_color"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="@dimen/_5sdp"
+        />
+
+</RelativeLayout>

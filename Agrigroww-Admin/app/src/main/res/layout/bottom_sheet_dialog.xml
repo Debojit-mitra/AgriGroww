@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_scroll"
+    android:background="@drawable/bottomsheet_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/animatedImageCardView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            app:cardCornerRadius="@dimen/_12sdp">
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/animatedImageBackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/backgrounds/scenic[0]"
+            android:alpha="0.7" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            android:clickable="false"
+            android:src="@drawable/linear_gradient_bg"
+            tools:ignore="ContentDescription" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:clickable="false"
+            android:src="@drawable/linear_gradient_bg"
+            android:elevation="1dp"
+            android:layout_below="@+id/animatedImageCardView"
+            android:layout_marginTop="@dimen/_minus28sdp"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/user_image_card"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:elevation="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_100sdp">
+
+            <ozaydin.serkan.com.image_zoom_view.ImageViewZoom
+                android:id="@+id/identify_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/textview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/user_image_card"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="Name: "
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/acme"
+            android:textColor="@color/mode"
+            />
+
+        <TextView
+            android:id="@+id/users_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/textview_name"
+            android:layout_below="@+id/user_image_card"
+            android:fontFamily="@font/acme"
+            android:text="Debojit"
+            android:textColor="@color/mode"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/textview_dateJoined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_below="@+id/textview_name"
+            android:text="Date Joined:"
+            android:textColor="@color/mode"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/acme"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/users_dateJoined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:text="02-05-2023"
+            android:textColor="@color/mode"
+            android:layout_below="@+id/textview_name"
+            android:layout_toEndOf="@+id/textview_dateJoined"
+            android:fontFamily="@font/acme"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/textview_UserID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_below="@+id/textview_dateJoined"
+            android:text="UserId:"
+            android:textColor="@color/mode"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/acme"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/users_userId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:text="dfr43ewfr432fw343acsdc3"
+            android:textColor="@color/mode"
+            android:layout_below="@+id/textview_dateJoined"
+            android:layout_toEndOf="@+id/textview_UserID"
+            android:fontFamily="@font/acme"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/textview_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_below="@+id/textview_UserID"
+            android:text="Email:"
+            android:textColor="@color/mode"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/acme"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/users_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:text="debojit16mitra@gmail.com"
+            android:textColor="@color/mode"
+            android:layout_below="@+id/textview_UserID"
+            android:layout_toEndOf="@+id/textview_email"
+            android:fontFamily="@font/acme"
+            android:textSize="@dimen/_12sdp" />
+        
+
+        <TextView
+            android:id="@+id/textview_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_below="@+id/textview_email"
+            android:text="Date Of Birth: "
+            android:textColor="@color/mode"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/acme"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/users_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_below="@+id/textview_email"
+            android:text="16-10-2002"
+            android:textColor="@color/mode"
+            android:layout_toEndOf="@+id/textview_dob"
+            android:fontFamily="@font/acme"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/textview_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_below="@+id/textview_dob"
+            android:text="Gender:"
+            android:textColor="@color/mode"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/acme"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/users_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_below="@+id/textview_dob"
+            android:text="Male"
+            android:textColor="@color/mode"
+            android:layout_toEndOf="@+id/textview_gender"
+            android:fontFamily="@font/acme"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/textview_user_banned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_below="@+id/textview_gender"
+            android:text="Banned:"
+            android:textColor="@color/mode"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/acme"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/users_bannedStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_below="@+id/textview_gender"
+            android:text="NO"
+            android:textColor="@color/mode"
+            android:layout_toEndOf="@+id/textview_user_banned"
+            android:fontFamily="@font/acme"
+            android:textSize="@dimen/_12sdp"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

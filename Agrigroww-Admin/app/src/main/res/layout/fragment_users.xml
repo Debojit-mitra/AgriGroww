@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.UsersFragment">
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/usersMainPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mode_inverse"
+        android:layout_marginTop="@dimen/_minus10sdp"
+        android:layout_below="@+id/TopBar"
+        android:layout_marginBottom="@dimen/_minus10sdp"
+        />
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/TopBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        app:backgroundColor="@color/nav_bar"
+        app:textColor="@color/white"
+        app:textSize="@dimen/_10sdp"
+        app:iconSize="@dimen/_20sdp"
+        app:indicatorColor="#2DFFFFFF"
+        app:indicatorRadius="@dimen/_13sdp"
+        app:sideMargins="@dimen/_8sdp"
+        app:itemPadding="@dimen/_8sdp"
+        app:iconTint="#C8FFFFFF"
+        app:iconTintActive="#FFFFFF"
+        app:cornerRadius="@dimen/_13sdp"
+        app:itemFontFamily="@font/acme"
+        app:corners="bottom_left|bottom_right"
+        app:menu="@menu/topbarmenu"
+        android:layout_alignParentTop="true"
+        />
+
+
+</RelativeLayout>

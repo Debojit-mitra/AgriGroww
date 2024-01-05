@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always"
+        app:iconTint="@color/mode"
+        android:title="@string/search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />-->
+
+    <item
+        android:id="@+id/tab_AllUsers"
+        android:icon="@drawable/ic_all_users"
+        android:title="@string/all_users" />
+    <item
+        android:id="@+id/tab_BanUsers"
+        android:icon="@drawable/ic_ban_block"
+        android:title="@string/banned_users" />
+</menu>

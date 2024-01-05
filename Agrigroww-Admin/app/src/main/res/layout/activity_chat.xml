@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mode_inverse"
+    tools:context=".ChatActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_chat_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/extra_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+        <ImageButton
+            android:id="@+id/back_arrow_btn"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@color/extra_background"
+            android:src="@drawable/ic_back"
+            app:tint="@color/mode" />
+
+        <TextView
+            android:id="@+id/textView_usersRequestNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/acme"
+            android:text="Request No   #1"
+            android:textColor="@color/mode"
+            android:textSize="@dimen/_18sdp"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/three_dot_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_alignParentEnd="true"
+                    android:backgroundTint="@color/extra_background"
+                    android:src="@drawable/ic_more_vert" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messages_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relative_bottom_area2"
+        android:paddingTop="@dimen/_10sdp"
+        android:layout_below="@+id/main_chat_toolbar"
+        />
+
+    <TextView
+        android:id="@+id/textview_request_marked_solved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/this_request_has_been_marked_solved"
+        android:textAlignment="center"
+        android:paddingBottom="@dimen/_3sdp"
+        android:visibility="gone"
+        android:layout_below="@+id/messages_recyclerView"
+        android:layout_marginTop="@dimen/_minus40sdp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relative_bottom_area2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal"
+        android:elevation="@dimen/_30sdp">
+
+        <com.devlomi.record_view.RecordView
+            android:id="@+id/record_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            app:counter_time_color="#ff0000"
+            app:slide_to_cancel_arrow="@drawable/recv_ic_arrow"
+            app:slide_to_cancel_arrow_color="#000000"
+            app:slide_to_cancel_bounds="@dimen/_30sdp"
+            app:slide_to_cancel_margin_right="@dimen/_30sdp"
+            app:slide_to_cancel_text="Slide To Cancel"
+            android:elevation="@dimen/_35sdp"
+
+            />
+
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_add_media"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:elevation="@dimen/_20sdp"
+        app:cardCornerRadius="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/relative_bottom_area2"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:visibility="gone"
+        >
+
+        <ImageButton
+            android:id="@+id/add_video_btn"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:background="@color/extra_background"
+            android:src="@drawable/ic_video_add"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:tint="@color/mode" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_add_media1"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:elevation="@dimen/_20sdp"
+        app:cardCornerRadius="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/card_add_media"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:visibility="gone"
+        >
+
+        <ImageButton
+            android:id="@+id/add_image_btn"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:background="@color/extra_background"
+            android:src="@drawable/ic_add_image"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:tint="@color/mode" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <RelativeLayout
+        android:id="@+id/relative_bottom_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card1"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:elevation="@dimen/_20sdp"
+            app:cardCornerRadius="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/_10sdp"
+            >
+
+            <ImageButton
+                android:id="@+id/chat_add_media_btn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:background="@color/extra_background"
+                android:src="@drawable/ic_add_small"
+                app:tint="@color/mode"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                />
+        </com.google.android.material.card.MaterialCardView>
+
+        <EditText
+            android:id="@+id/editMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_edittext"
+            android:hint="@string/type_message_here"
+            android:layout_toStartOf="@+id/parent_layout"
+            android:layout_toEndOf="@id/card1"
+            android:layout_centerVertical="true"
+            android:maxLines="4"
+            android:padding="@dimen/_10sdp" />
+
+        <RelativeLayout
+            android:id="@+id/parent_layout"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_toStartOf="@+id/card3"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+
+
+            <com.devlomi.record_view.RecordButton
+                android:id="@+id/record_button"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/bg_mic"
+                android:scaleType="centerInside"
+                android:elevation="@dimen/_35sdp"
+                app:mic_icon="@drawable/ic_mic" />
+
+
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card3"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:elevation="@dimen/_20sdp"
+            app:cardCornerRadius="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_10sdp">
+
+            <ImageButton
+                android:id="@+id/main_chat_send_btn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:background="@color/extra_background"
+                android:src="@drawable/ic_arrow_forward"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:tint="@color/mode" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
